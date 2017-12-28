@@ -1,0 +1,116 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Lato:300,400,700", :rel => "stylesheet"}
+    %link{href: "https://fonts.googleapis.com/css?family=Courgette", :rel => "stylesheet"}
+    :scss
+      body {
+        height: 100%;
+        width: 80%;
+        margin: 0;
+        // font: 400 15px/1.8 "Lato", sans-serif;
+        color: #777;
+      }
+      header {
+        height: 50px;
+        color: #777;
+      }
+      .left {
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+      .primary-color {
+        color: #FD715F;
+      }
+      h1, h2, h3 {
+        // font-family: "Courgette", cursive;
+        color: #777;
+      }
+      p {
+        color: #777;
+      }
+      .container {
+        width: 80%;
+        margin: 0 auto 0 0;
+      }
+      .logo {
+        height: 50px;
+        img {
+          height: 50px;
+        }
+      }
+      figure {
+        img {
+          height: 200px;
+        }
+      }
+  %body
+    .container
+      %header
+        .logo.left
+          = email_image_tag("logo.png")
+        %h3.slogan.primary-color.right
+          Huellas imborrables
+      .content
+        %h3
+          Solicitud de
+          = @full_name
+        %h3
+          %strong Fecha de la solicitud:
+          = Date.today
+
+        %p
+          %strong.primary-color
+            %h2 Datos Personales
+
+        %p
+          %strong.primary-color
+            Nombre:
+          %span= @full_name
+
+        %p
+          %strong.primary-color
+            Teléfono:
+          %span= @phone
+
+        %p
+          %strong.primary-color
+            Correo:
+          %span= @email
+
+        %p
+          %strong.primary-color
+            Localidad:
+          %span
+            = "#{@city} - #{@country}"
+
+        -# %p
+        -#   %strong.primary-color
+        -#     País:
+        -#   %span= @country
+        -#
+        -# %p
+        -#   %strong.primary-color
+        -#     Ciudad:
+        -#   %span= @city
+
+        -# %p
+        -#   %strong.primary-color
+        -#     Solicitud:
+        -#   %span= @product.title
+
+        %h2.primary-color Producto solicitado
+        %figure.primary-color
+          %figcaption= @product.title
+          = image_tag attachments[@photo].url if @photo
+          -# = email_product_image_tag(image_url(@photo_image))
+        %p
+          En la brevedad posible comunicarle al cliente el monto total de su solicitud,
+          la disponibilidad del producto y métodos de pago.
+
+      %footer
+        Babby Taso ® 2017 - Todos los derechos reservados - Desarrollado por Slice Group

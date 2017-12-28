@@ -1,0 +1,142 @@
+!!!
+%html{:lang => "en"}
+  %head
+    = render 'app/layouts/head'
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %title REIMCA
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1, user-scalable=no", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    / SET CSS
+    %link{:href => "/assets/css/bootstrap.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/font-awesome.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/styles.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/slick.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/slick-theme.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/flickity.min.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/button.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "/assets/css/effects.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Lato:300i,400,400i,700,700i,900,900i", :rel => "stylesheet"}/
+    %script{:src => "https://www.google.com/recaptcha/api.js"}
+    %link{:href => "https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i", :rel => "stylesheet"}/
+  %body
+    %header#main.visible-lg
+      .button-burger
+        #burguer.hamburger.hamburger--spin
+          .hamburger-box
+            .hamburger-inner
+      %nav#menu.menu
+        .frame-menu
+          %ul
+            %li
+              %a{:href => "index.html", :target => "_black"}
+                %span.item-link inicio
+            %li
+              %a{:href => "about.html", :target => "_black"}
+                %span.item-link nosotros
+            %li
+              %a{:href => "index.html#service", :target => "_black"}
+                %span.item-link productos y servicios
+            %li
+              %a{:href => "tank.html", :target => "_black"}
+                %span.item-link tanques
+            %li
+              %a{:href => "projects.html", :target => "_black"}
+                %span.item-link experiencia
+            %li
+              %a{:href => "index.html#customers", :target => "_black"}
+                %span.item-link clientes
+            %li
+              %a{:href => "#contact-us-services"}
+                %span.item-link contáctanos
+            %li
+              %a{:href => "index.html#maps", :target => "_black"}
+                %span.item-link ubícanos
+
+%section#cover-service.visible-lg
+  #metalmecanica-cover.box-cover
+    .mask-cover
+      #title-service-v Metalmecánica
+  .main
+    .box-burger
+%section#services-v.visible-lg
+  .container-fluid.fix
+    .wallpapers-service
+      .patron-services
+    .container
+      .row
+        .col-lg-6
+          .box-service-image
+            .box-image-service
+              = image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
+        .col-lg-6
+          .title
+            %p#description-services-v Desarrollamos obras de envergadura en construcción y arranque de planta.
+          #box-services-v
+            %p.information-services-v En los últimos años la actividad metalmecánica del país ha experimentado un crecimiento significativo, principalmente en la península de Paraguaná, debido en gran parte a la actividad operacional de refinación que se lleva a cabo en el Complejo Refinador Paraguaná, el Centro Refinador mas grande del mundo.
+            %p.information-services-v La división metalmecánica REIMCA está en capacidad de prestar un servicio de calidad realizado por el mejor talento humano, adiestrado, capacitado y certificado por una serie de normas internacionales, empleando la mas alta tecnología en equipos y maquinarias, rapidez en la prestación de servicio, disponibilidad permanente, competitividad en cuanto a precios, utilización de materia prima de primera calidad y con la gran ventaja que nos ofrece contar con una ubicación geográfica estratégica.
+
+
+
+
+
+%section#contact-us-services
+  .container-fluid.fix
+    #wallpaper-contact
+    .col-xs-12.col-sm-12.col-md-12.col-lg-4.fix
+      #box-contact-w
+        #info-contact
+          %span#title-contact contáctanos
+          %span.title-phone-email Teléfonos
+          %span.item-phone-email +58 269 2206758
+          %span.item-phone-email +58 414 5299511
+          %span.title-phone-email Correo electrónico
+          %span.item-phone-email medinal@reimca.net
+          %span.item-phone-email estebanmedina@reimca.net
+    .col-xs-12.col-sm-12.col-md-12.col-lg-8.fix
+      #box-form-contact
+        #mask-contac
+          = render "keppler_contact_us/messages/form"
+
+%footer#footer
+  .container-fluid.fix
+    #box-footer-info
+      .container
+        .row
+          .col-xs-12.col-sm-12.col-md-12.col-lg-4
+            .box-footer-grid
+              #logo-corporation
+              #corporation
+                %span#title-corporation Representaciones e Inversiones Medina, C.A.
+          .col-xs-12.col-sm-12.col-md-12.col-lg-4
+            .box-footer-grid
+              #info-address
+                %span.title-address Ubícanos
+                #button-footer.button-o-r
+                  %a#footer-button.o-button.-white.-left{:href => "#"}
+                    %span.o-button_label ver mapa
+          .col-xs-12.col-sm-12.col-md-12.col-lg-4
+            .box-footer-grid
+              %span.title-social Síguenos
+              %iframe.lightwidget-widget{:allowtransparency => "true", :scrolling => "no", :src => "http://lightwidget.com/widgets/0f43e118fb795a13ad3cfcb7f4f5f7de.html", :style => "width: 100% !important; border: 0; overflow: hidden; height: 100% !important; position: absolute;top: 70%;transform: translateY(-60%);"}
+    #credits
+      %span#copy
+        Copyright © 2017 - Reimca.com - Todos los Derechos Reservados - Powered by
+        %a#slice{:href => "https://slicegroup.xyz", :target => "_blank"} Slice Group
+
+
+    / SET JS
+    %script{:src => "/assets/js/jquery-3.2.1.min.js"}
+    %script{:src => "/assets/js/bootstrap.min.js"}
+    %script{:src => "/assets/js/slick.min.js"}
+    %script{:src => "/assets/js/flickity.pkgd.min.js"}
+    %script{:src => "/assets/js/main.js"}
+    %script{:src => "http://lightwidget.com/widgets/lightwidget.js"}
+
+
+
+
+

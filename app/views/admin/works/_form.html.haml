@@ -1,0 +1,34 @@
+.wrapper
+	.wrapper-body.container
+		.actions
+			= link_to admin_works_path, class: "btn-floating btn-flat tooltipped", "data-position" => "bottom", "data-tooltip" => t("keppler.actions.back") do
+				= material_icon.md_18.arrow_back.css_class("md-dark")
+		.wrapper-inputs
+			.card
+				.card-content
+					= simple_form_for [:admin, @work] do |f|
+						.row
+							= f.input :name
+							= f.input :description, input_html: {class: "materialize-textarea"}
+							= f.input :stack_state_id, collection: StackState.all
+							#state
+							= f.input :contractor
+							= f.input :time
+							= f.file_field :image
+
+							.form-actions.right
+								= f.button :submit, t("keppler.actions.save"), name: '_save'
+								= f.button :submit, t("keppler.actions.save_and_add_another"), name: '_add_other'
+
+
+:javascript
+	
+	$(document).ready(function() {
+		$('#work_stack_state_id').on('change', function() {
+			$.ajax({
+				 url: "#{admin_work_state_path}",
+				 type: "POST",
+				 data: { stack_state_id: $(this).val() }
+			});
+		});
+	});
