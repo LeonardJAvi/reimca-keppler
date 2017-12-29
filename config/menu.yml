@@ -27,7 +27,7 @@ menu:
   work:
     name: works
     url_path: /admin/works
-    icon: insert_chart
+    icon: content_paste
     current: ['admin/works']
     model: Work
   user:

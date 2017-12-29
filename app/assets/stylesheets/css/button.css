@@ -236,6 +236,7 @@ a.-hover:hover::after, .o-link.-hover:hover::after {
   letter-spacing: 0.12em;
   font-weight: 500;
   font-size: 0.75rem;
+  outline: 0 !important;
 }
 
 .o-button:hover .o-button_label {

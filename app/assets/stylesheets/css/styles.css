@@ -237,6 +237,7 @@ span.item-link {
   transform: translateX(0);
   color: white !important;
   order: 2 !important;
+  outline: 0 !important;
 }
 
 #contact-button {
@@ -1029,7 +1030,8 @@ section#contact-us {
 }
 
 #recaptcha {
-   order:  1 !important;
+  order:  1 !important;
+  outline: 0 !important;
 }
 
 #info-contact span#title-contact {
@@ -2254,3 +2256,49 @@ section#contact-us-details{
 }
 
 
+
+/* Config. Error Re-Capcha */
+
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #ffffff !important;
+    text-shadow: 0 1px 0 #fff;
+    opacity: 1 !important;
+}
+
+.alert-danger {
+    color: #ffff !important;
+    background-color: #F44336 !important;
+    border-color: transparent !important;
+}
+
+.alert-success {
+    color: #ffff !important;
+    background-color:#4CAF50 !important;
+    border-color: transparent;
+}
+
+.alert {
+    padding: 15px !important;
+    margin-bottom: 20px !important;
+    border: 1px solid transparent !important;
+    border-radius: 2px !important;
+    position: absolute !important;
+    z-index: 1 !important;
+    bottom: 0 !important;
+    left: 55% !important;
+    transform: translate(-55%,0%) !important;
+    text-align: center !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+}
+
+
+#flash_alert, #flash_notice{
+  font-weight: 600 !important;
+  text-align: center !important;
+  white-space: pre-line !important;
+}
