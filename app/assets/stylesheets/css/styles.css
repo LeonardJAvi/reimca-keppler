@@ -276,7 +276,7 @@ span.item-link {
 /* ===== Button ====== */
 
 /* ===== Home Slide ====== */
-section#home-slide {
+section#home{
   height: 100%;
   width: 100%;
   padding: 0;
@@ -841,7 +841,7 @@ section#experience {
 .card .card-content {
 
   /*  padding: 24px; */
-  padding: 15px 24px;
+  padding: 2px 24px;
   border-radius: 0 0 1px 1px;
 }
 
@@ -854,6 +854,7 @@ section#experience {
   text-indent: 0px;
   white-space: pre-line;
   word-spacing: normal;
+  padding: 0;
 }
 
 #box-button-card {
@@ -1581,7 +1582,7 @@ span.title-box-cover {
 }
 
 #tank-cover {
-  background-image: url(../img/DomoG_HMT_04V2_.jpg);
+  background-image: url(../img/DomoG_HMT_04V2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2026,7 +2027,7 @@ span.item-filter{
 
 
 .box-project {
-  width: 320px;
+  width: 100%;
   height: 320px;
   position: relative;
   transition: all 1s ease;
@@ -2159,7 +2160,7 @@ section#contact-us-services {
 }
 
 section#contact-us-about {
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
 section#contact-us-tank {

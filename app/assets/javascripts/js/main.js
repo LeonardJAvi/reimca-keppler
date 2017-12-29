@@ -54,7 +54,12 @@ $('.carousel').flickity({
   wrapAround: false,
   setGallerySize: false,
   percentPosition: false,  
+  pauseAutoPlayOnHover: false,
 });
+
+
+
+
 
 });
 

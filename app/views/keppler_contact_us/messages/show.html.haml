@@ -14,10 +14,15 @@
 						.display-label= model.human_attribute_name(:name)
 						.display-value.fs-body-1.tc-black-2= @message.name.humanize
 					%li.list-row
-						.display-label= model.human_attribute_name(:subject)
-						.display-value.fs-body-1.tc-black-2= @message.subject.humanize
-					%li.list-row
 						.display-label= model.human_attribute_name(:email)
 						.display-value.fs-body-1.tc-black-2= @message.email
+					%li.list-row
+						.display-label= model.human_attribute_name(:phone)
+						.display-value.fs-body-1.tc-black-2= @message.phone
+					%li.list-row
+						.display-label= model.human_attribute_name(:company)
+						.display-value.fs-body-1.tc-black-2= @message.company.humanize
+					%li.list-row
+						.display-label= model.human_attribute_name(:content)
 					%hr
 					.display-value.fs-body-1.tc-black-2= @message.content.humanize

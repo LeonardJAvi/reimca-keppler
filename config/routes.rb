@@ -1,10 +1,10 @@
 Rails.application.routes.draw do
   root to: 'app/front#index'
   get '/about', to: 'app/front#about', as: :app_about
-  get '/service/civil', to: 'app/front#civil', as: :app_civil
-  get '/service/electricity', to: 'app/front#electricidad', as: :app_electricity
-  get '/service/metalmechanics', to: 'app/front#metalmecanica', as: :app_metalmechanics
-  get '/service/tank', to: 'app/front#tank', as: :app_tank
+  get '/services/civil', to: 'app/front#civil', as: :app_civil
+  get '/services/electricity', to: 'app/front#electricidad', as: :app_electricity
+  get '/services/metalmechanics', to: 'app/front#metalmecanica', as: :app_metalmechanics
+  get '/services/tank', to: 'app/front#tank', as: :app_tank
   get '/project/details', to: 'app/front#projectdetails', as: :app_projectdetails
   get '/projects/all', to: 'app/front#projects', as: :app_projects
 
