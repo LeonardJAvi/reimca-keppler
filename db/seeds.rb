@@ -20,6 +20,9 @@ User.create(
   password_confirmation: '12345678', role_ids: '1'
 )
 
+puts 'admin@keppler.com has been created'
+
+#Stack States Venezuela
 StackState.create(name:'Amazonas')
 StackState.create(name:'Anzoátegui')
 StackState.create(name:'Apure')
@@ -45,13 +48,16 @@ StackState.create(name:'Vargas')
 StackState.create(name:'Yaracuy')
 StackState.create(name:'Zulia')
 
-#ciudades
-#amazonas
+puts 'Stack States has been created'
+
+#Stack City Venezuela
+
+#Amazonas
 StackCity.create(name:'Maroa',stack_state_id:'1')
 StackCity.create(name:'Puerto Ayacucho',stack_state_id:'1')
 StackCity.create(name:'San Fernando de Atabapo',stack_state_id:'1')
 
-#anzoategui
+#Anzoategui
 StackCity.create(name:'Anaco',stack_state_id:'2')
 StackCity.create(name:'Aragua de Barcelona',stack_state_id:'2')
 StackCity.create(name:'Barcelona',stack_state_id:'2')
@@ -116,7 +122,7 @@ StackCity.create(name:'Turmero',stack_state_id:'4')
 StackCity.create(name:'Villa de Cura',stack_state_id:'4')
 StackCity.create(name:'Zuata',stack_state_id:'4')
 
-#barinas
+#Barinas
 StackCity.create(name:'Barinas',stack_state_id:'5')
 StackCity.create(name:'Barinitas',stack_state_id:'5')
 StackCity.create(name:'Barrancas',stack_state_id:'5')
@@ -130,7 +136,7 @@ StackCity.create(name:'Sabaneta',stack_state_id:'5')
 StackCity.create(name:'Santa Bárbara de Barinas',stack_state_id:'5')
 StackCity.create(name:'Socopó',stack_state_id:'5')
 
-#bolivar
+#Bolivar
 StackCity.create(name:'Caicara del Orinoco',stack_state_id:'6')
 StackCity.create(name:'Canaima',stack_state_id:'6')
 StackCity.create(name:'Ciudad Bolívar',stack_state_id:'6')
@@ -176,7 +182,7 @@ StackCity.create(name:'Urama',stack_state_id:'7')
 StackCity.create(name:'Valencia',stack_state_id:'7')
 StackCity.create(name:'Vigirimita',stack_state_id:'7')
 
-#cojedes
+#Cojedes
 StackCity.create(name:'Aguirre',stack_state_id:'8')
 StackCity.create(name:'Apartaderos Cojedes',stack_state_id:'8')
 StackCity.create(name:'Arismendi',stack_state_id:'8')
@@ -197,13 +203,13 @@ StackCity.create(name:'Tinaco',stack_state_id:'8')
 StackCity.create(name:'Tinaquillo',stack_state_id:'8')
 StackCity.create(name:'Vallecito',stack_state_id:'8')
 
-#delta amacuro
+#Delta Amacuro
 StackCity.create(name:'Tucupita',stack_state_id:'9')
 
-#distrito capital
+#Distrito Capital
 StackCity.create(name:'Caracas',stack_state_id:'10')
 
-#falcon
+#Falcon
 StackCity.create(name:'Adícora',stack_state_id:'11')
 StackCity.create(name:'Boca de Aroa',stack_state_id:'11')
 StackCity.create(name:'Cabure',stack_state_id:'11')
@@ -236,8 +242,7 @@ StackCity.create(name:'Tocuyo de La Costa',stack_state_id:'11')
 StackCity.create(name:'Tucacas',stack_state_id:'11')
 StackCity.create(name:'Yaracal',stack_state_id:'11')
 
-#guarico
-
+#Guarico
 StackCity.create(name:'Altagracia de Orituco',stack_state_id:'12')
 StackCity.create(name:'Cabruta',stack_state_id:'12')
 StackCity.create(name:'Calabozo',stack_state_id:'12')
@@ -257,8 +262,7 @@ StackCity.create(name:'Tucupido',stack_state_id:'12')
 StackCity.create(name:'Valle de La Pascua',stack_state_id:'12')
 StackCity.create(name:'Zaraza',stack_state_id:'12')
 
-#lara
-
+#Lara
 StackCity.create(name:'Aguada Grande',stack_state_id:'13')
 StackCity.create(name:'Atarigua',stack_state_id:'13')
 StackCity.create(name:'Barquisimeto',stack_state_id:'13')
@@ -283,8 +287,7 @@ StackCity.create(name:'Sarare',stack_state_id:'13')
 StackCity.create(name:'Siquisique',stack_state_id:'13')
 StackCity.create(name:'Tintorero',stack_state_id:'13')
 
-#merida
-
+#Merida
 StackCity.create(name:'Apartaderos Mérida',stack_state_id:'14')
 StackCity.create(name:'Arapuey',stack_state_id:'14')
 StackCity.create(name:'Bailadores',stack_state_id:'14')
@@ -315,8 +318,7 @@ StackCity.create(name:'Tovar',stack_state_id:'14')
 StackCity.create(name:'Tucani',stack_state_id:'14')
 StackCity.create(name:'Zea',stack_state_id:'14')
 
-#miranda
-
+#Miranda
 StackCity.create(name:'Araguita',stack_state_id:'15')
 StackCity.create(name:'Carrizal',stack_state_id:'15')
 StackCity.create(name:'Caucagua',stack_state_id:'15')
@@ -353,8 +355,7 @@ StackCity.create(name:'Tacarigua de Mamporal',stack_state_id:'15')
 StackCity.create(name:'Tácata',stack_state_id:'15')
 StackCity.create(name:'Turumo',stack_state_id:'15')
 
-#monagas
-
+#Monagas
 StackCity.create(name:'Aguasay',stack_state_id:'16')
 StackCity.create(name:'Aragua de Maturín',stack_state_id:'16')
 StackCity.create(name:'Barrancas del Orinoco',stack_state_id:'16')
@@ -378,8 +379,7 @@ StackCity.create(name:'Temblador',stack_state_id:'16')
 StackCity.create(name:'Teresen',stack_state_id:'16')
 StackCity.create(name:'Uracoa',stack_state_id:'16')
 
-#nueva esparta
-
+#Nueva Esparta
 StackCity.create(name:'Altagracia',stack_state_id:'17')
 StackCity.create(name:'Boca de Pozo',stack_state_id:'17')
 StackCity.create(name:'Boca de Río',stack_state_id:'17')
@@ -399,8 +399,7 @@ StackCity.create(name:'San Pedro de Coche',stack_state_id:'17')
 StackCity.create(name:'Santa Ana de Nueva Esparta',stack_state_id:'17')
 StackCity.create(name:'Villa Rosa',stack_state_id:'17')
 
-#portuguesa
-
+#Portuguesa
 StackCity.create(name:'Acarigua',stack_state_id:'18')
 StackCity.create(name:'Agua Blanca',stack_state_id:'18')
 StackCity.create(name:'Araure',stack_state_id:'18')
@@ -422,8 +421,7 @@ StackCity.create(name:'San Rafael de Onoto',stack_state_id:'18')
 StackCity.create(name:'Santa Rosalía',stack_state_id:'18')
 StackCity.create(name:'Turén',stack_state_id:'18')
 
-#sucre
-
+#Sucre
 StackCity.create(name:'Altos de Sucre',stack_state_id:'19')
 StackCity.create(name:'Araya',stack_state_id:'19')
 StackCity.create(name:'Cariaco',stack_state_id:'19')
@@ -448,8 +446,7 @@ StackCity.create(name:'Tunapuy',stack_state_id:'19')
 StackCity.create(name:'Yaguaraparo',stack_state_id:'19')
 StackCity.create(name:'Yoco',stack_state_id:'19')
 
-#tachira
-
+#Tachira
 StackCity.create(name:'Abejales',stack_state_id:'20')
 StackCity.create(name:'Borota',stack_state_id:'20')
 StackCity.create(name:'Bramon',stack_state_id:'20')
@@ -482,8 +479,7 @@ StackCity.create(name:'Seboruco',stack_state_id:'20')
 StackCity.create(name:'Táriba',stack_state_id:'20')
 StackCity.create(name:'Umuquena',stack_state_id:'20')
 
-#trujillo
-
+#Trujillo
 StackCity.create(name:'Batatal',stack_state_id:'21')
 StackCity.create(name:'Betijoque',stack_state_id:'21')
 StackCity.create(name:'Boconó',stack_state_id:'21')
@@ -513,13 +509,11 @@ StackCity.create(name:'Tostós',stack_state_id:'21')
 StackCity.create(name:'Trujillo',stack_state_id:'21')
 StackCity.create(name:'Valera',stack_state_id:'21')
 
-#vargas
-
+#Vargas
 StackCity.create(name:'Carayaca',stack_state_id:'22')
 StackCity.create(name:'Litoral',stack_state_id:'22')
 
-#yaracuy
-
+#Yaracuy
 StackCity.create(name:'Aroa',stack_state_id:'23')
 StackCity.create(name:'Boraure',stack_state_id:'23')
 StackCity.create(name:'Campo Elías de Yaracuy',stack_state_id:'23')
@@ -537,8 +531,7 @@ StackCity.create(name:'Urachiche',stack_state_id:'23')
 StackCity.create(name:'Yaritagua',stack_state_id:'23')
 StackCity.create(name:'Yumare',stack_state_id:'23')
 
-#zulia
-
+#Zulia
 StackCity.create(name:'Bachaquero',stack_state_id:'24')
 StackCity.create(name:'Bobures',stack_state_id:'24')
 StackCity.create(name:'Cabimas',stack_state_id:'24')
@@ -587,7 +580,7 @@ StackCity.create(name:'Tamare',stack_state_id:'24')
 StackCity.create(name:'Tía Juana',stack_state_id:'24')
 StackCity.create(name:'Villa Rosario',stack_state_id:'24')
 
-puts 'admin@keppler.com has been created'
+puts 'Stack Cities has been created'
 
 Customize.create(file: "", installed: true)
 puts 'Keppler Template has been created'
@@ -607,10 +600,12 @@ setting = Setting.new(
 setting.social_account = SocialAccount.new
 setting.appearance = Appearance.new(theme_name: 'keppler')
 setting.save
+
 puts 'Setting default has been created'
 
 KepplerContactUs::MessageSetting.create(
 mailer_to:"gagg1707@gmail.com",
 mailer_from:"gagg1707@gmail.com"
 )
+
 puts 'Mailer From & Mailer To has been created'

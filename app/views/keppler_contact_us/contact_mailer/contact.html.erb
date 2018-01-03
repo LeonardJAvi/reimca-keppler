@@ -1,96 +1,199 @@
-!!!
-%html
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
-    %link{href: "https://fonts.googleapis.com/icon?family=Material+Icons", :rel => "stylesheet"}
-    %link{href: "https://fonts.googleapis.com/css?family=Lato:300,400,700", :rel => "stylesheet"}
-    %link{href: "https://fonts.googleapis.com/css?family=Courgette", :rel => "stylesheet"}
-    :scss
-      body {
-        height: 100%;
-        width: 80%;
-        margin: 0;
-        // font: 400 15px/1.8 "Lato", sans-serif;
-        color: #777;
-      }
-      header {
-        height: 50px;
-        color: #777;
-      }
-      .left {
-        float: left;
-      }
-      .right {
-        float: right;
-      }
-      .primary-color {
-        color: #FD715F;
-      }
-      h1, h2, h3 {
-        // font-family: "Courgette", cursive;
-        color: #777;
-      }
-      p {
-        color: #777;
-      }
-      .container {
-        width: 80%;
-        margin: 0 auto 0 0;
-      }
-      .logo {
-        height: 50px;
-        img {
-          height: 50px;
-        }
-      }
-      figure {
-        img {
-          height: 200px;
-        }
-      }
-  
-  %body
-    .container
-      %header
-        .logo.left
-          -# = email_image_tag("logo.png")
-        %h3.slogan.primary-color.right
-          Representaciones e Inversiones Medina, C.A
-      .content
-        %h3
-          Solicitud de
-        %h3
-          %strong Fecha de la solicitud:
-          = Date.today
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <div id="box-mailer">
+        <div id="header">
+            <div id="banner">
+                <img src="logo.png">
+            </div>
+            <h3 id="title-mailer">Representaciones e Inversiones Medina C. A.</h3>
+        </div>
+        <div id="information">
+            <h3 id="title-information">Solicitud de Contacto</h3>
+            <ul>
+                <li><span id="title-item">Datos del Solicitante</span></li>
+                <li><span class="item">Fecha de Solicitud:</span><span class="data">03/01/2017</span></li>
+                <li><span class="item">Nombre:</span><span class="data">Leonardo Petit</span></li>
+                <li><span class="item">Correo Electrónico:</span><span class="data">leonardp@gmail.com</span></li>
+                <li><span class="item">Teléfono:</span><span class="data">04268004939</span></li>
+                <li><span class="item">Empresa:</span><span class="data">CORPTECH</span></li>
+            </ul>
+            <p id="alert">Estimado(a), recuerde a la brevedad posible dar respuesta a esta solicitud</p>
+            <span class="company">-Construyendo futuro-</span>
+        </div>
+        <div id="footer">
+            <span id="credits">Copyright © 2018 - Reimca.com - Todos los Derechos Reservados - Powered by Slice Group</span> 
+        </div>
+    </div>
+   
+<style type="text/css">
 
-        %p
-          %strong.primary-color
-            %h2 Datos Personales
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
 
-        %p
-          %strong.primary-color
-            Nombre:
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Lato', sans-serif !important;
+}
 
-        %p
-          %strong.primary-color
-            Teléfono:
+#header{
+    height: 105px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 12px;
+    background: #0e0e37;
+    padding: 15px 0px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
 
-        %p
-          %strong.primary-color
-            Correo:
+#information{
+    height: 310px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1e1e22;
+    background-image: url('../img/footer_patron.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px 20px;
+    border-top: 1px dashed darkgray;
+    border-bottom: 1px dashed darkgray;
+}
 
-        %p
-          %strong.primary-color
-            Localidad:
-          %span
+#footer{
+    height: 25px;
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0e0e37;
+    padding: 10px 0px 0px 0px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
 
-        %h2.primary-color Producto solicitado
-        %figure.primary-color
-          -# %figcaption= @product.title
-          -# = email_product_image_tag(image_url(@photo_image))
-        %p
-          En la brevedad posible comunicarle al cliente el monto total de su solicitud,
-          la disponibilidad del producto y métodos de pago.
+#banner{
+  height: 80px;
+  width: 180px;
+  margin: 0 auto;
+}
 
-      %footer
-        Reimca ® 2017 - Todos los derechos reservados - Desarrollado por Slice Group
+#banner img{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#box-mailer{
+    width: 680px;
+    height: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 25px auto 0px auto;
+}
+
+span.item {
+    line-height: 2;
+    color: white;
+    font-weight: 500;
+    line-height: 2;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+span.data{
+    padding: 0px 5px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    font-weight: 500;
+}
+
+span#title-item{
+    color: white;
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    line-height: 2;
+}
+
+span#credits{
+   text-align: center;
+   color: white;
+   font-size: 12px;
+   display: block;
+}
+
+ul{
+    list-style: none !important;
+}
+
+span.company{
+  text-align: center;
+  line-height: 2;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  display: block;
+  letter-spacing: 5px;
+  color: white;
+  text-transform: uppercase;
+}
+
+p#alert{
+   color: #F44336;
+   background: transparent;
+   text-align: center;
+   padding: 10px;
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: 1px;
+}
+
+h3#title-information{
+  text-align: center;
+  color: white;
+  line-height: 3;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-family: sans-serif;
+
+}
+
+h3#title-mailer{
+    text-align: center;
+    color: white;
+    margin: 10px 0px;
+}
+</style>
+</body>
+</html>

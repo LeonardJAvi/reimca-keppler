@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'angularjs-rails'
 gem 'nprogress-rails'
 gem 'ckeditor'
+# gem "jquery-slick-rails"
 
 # Documentation
 gem 'sdoc', '~> 0.4.0', group: :doc

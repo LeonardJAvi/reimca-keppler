@@ -13,28 +13,28 @@
 			.frame-menu
 				%ul
 					%li
-						%a{:href => "#home"}
+						= link_to root_path + '#home' do
 							%span.item-link inicio
 					%li
-						= link_to app_about_path  do
+						= link_to app_about_path + '#about-v'  do
 							%span.item-link nosotros
 					%li
-						%a{:href => "#service"}
+						= link_to root_path + '#service' do
 							%span.item-link productos y servicios
 					%li
-						%a{:href => "#tank"}
+						= link_to root_path  + '#tank' do
 							%span.item-link tanques
 					%li
-						%a{:href => "#experience"}
+						= link_to root_path  + '#experience' do
 							%span.item-link experiencia
 					%li
-						%a{:href => "#customers"}
+						= link_to root_path  + '#customers' do
 							%span.item-link clientes
 					%li
-						%a{:href => "#contact-us"}
+						= link_to root_path + '#contact-us' do
 							%span.item-link contáctanos
 					%li
-						%a{:href => "#maps"}
+						= link_to root_path + '#maps' do
 							%span.item-link ubícanos
 
 %section#home
@@ -140,10 +140,9 @@
 								= image_tag work.image
 								%span.card-title 
 									= work.name
-								.card-content
-									%p 
-										= work.description.truncate(200)
-										
+							.card-content
+								%p 
+									= truncate(strip_tags(work.description), length: 180) #433 sin espacio
 			.col-xs-12.col-sm-12.col-md-12.col-lg-12
 				#box-button-card
 					#button-experiencie.button-o-r
@@ -174,22 +173,8 @@
 				= image_tag 'img/Tahal_Group.png', class: 'carousel-image img-responsive'
 
 %section#contact-us
-	.container-fluid.fix
-		#wallpaper-contact
-		.col-xs-12.col-sm-12.col-md-12.col-lg-4.fix
-			#box-contact-w
-				#info-contact
-					%span#title-contact contáctanos
-					%span.title-phone-email Teléfonos
-					%span.item-phone-email +58 269 2206758
-					%span.item-phone-email +58 414 5299511
-					%span.title-phone-email Correo electrónico
-					%span.item-phone-email medinal@reimca.net
-					%span.item-phone-email estebanmedina@reimca.net
-		.col-xs-12.col-sm-12.col-md-12.col-lg-8.fix
-			#box-form-contact
-				#mask-contac
-					= render "keppler_contact_us/messages/form"
+	= render "app/front/contacto_reimca"
+
 					
 %section#maps
 	.title

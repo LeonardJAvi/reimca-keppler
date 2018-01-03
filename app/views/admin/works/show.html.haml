@@ -30,14 +30,14 @@
 								.display-label= t("activerecord.attributes.#{controller_name.singularize}.description")
 							%td
 								.display-value.fs-body-1.tc-black-2= @work.description.blank? ? '----------' : @work.description
-						%tr
+						%tr 
 							%th
-								.display-label= t("activerecord.attributes.#{controller_name.singularize}.stack_state_id")
+								.display-label= t("State")
 							%td
 								.display-value.fs-body-1.tc-black-2= @work.stack_state_id.blank? ? '----------' : @work.stack_state.name
 						%tr
 							%th
-								.display-label= t("activerecord.attributes.#{controller_name.singularize}.stack_city_id")
+								.display-label= t("City")
 							%td
 								.display-value.fs-body-1.tc-black-2= @work.stack_city_id.blank? ? '----------' : @work.stack_city.name
 						%tr

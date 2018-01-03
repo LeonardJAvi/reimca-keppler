@@ -253,6 +253,7 @@ span.item-link {
   left: 0;
   display: flex;
   justify-content: center;
+
 }
 
 .o-button_label {
@@ -280,8 +281,8 @@ span.item-link {
 section#home{
   height: 100%;
   width: 100%;
-  padding: 0;
-  margin: 0px;
+ /*  padding: 0;
+  margin: 0px; */
 }
 
 #box-slide {
@@ -377,6 +378,8 @@ span.subtitle-slider{
 
 .slick-dots {
   bottom: 10px !important;
+  z-index: 1 !important;
+  cursor: pointer !important;
 }
 
 .slick-dots li {
@@ -415,7 +418,7 @@ span.subtitle-slider{
 }
 
 .main {
-  width: 400px;
+/*   width: 400px; */
   height: 120px;
   position: fixed;
   top: 0;
@@ -610,7 +613,7 @@ span.point {
 span.service-t {
   font-family: 'Lato', sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   word-spacing: 1px;
 }
@@ -795,7 +798,7 @@ section#experience {
   top: 0;
   bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 200px;
   filter: contrast(80%);
 }
 
@@ -819,6 +822,7 @@ section#experience {
   display: block;
   background: #1e1e22;
   width: 100%;
+  height: 38px;
 }
 
 .card .card-content .card-title {
@@ -840,10 +844,9 @@ section#experience {
 }
 
 .card .card-content {
-
-  /*  padding: 24px; */
-  padding: 2px 24px;
+  padding: 10px 24px;
   border-radius: 0 0 1px 1px;
+  overflow-wrap: break-word;
 }
 
 .card .card-content p {
@@ -852,9 +855,6 @@ section#experience {
   color: #1e1e22de;
   text-align: justify;
   font-size: 13px;
-  text-indent: 0px;
-  white-space: pre-line;
-  word-spacing: normal;
   padding: 0;
 }
 
@@ -988,13 +988,12 @@ section#contact-us {
 
 
 #wallpaper-contact {
-    height: 380px;
-    width: 100%;
-    position: absolute;
-    background-image: url('../img/contact.jpg');
+      background-image: url(../img/contact.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+
 }
 
 #mask-contac {
@@ -1078,6 +1077,7 @@ section#contact-us {
 
 textarea.form-control {
   height: 55px !important;
+  overflow-x: hidden !important;
 }
 
 .form-group {
@@ -1926,7 +1926,7 @@ section#project-details{
 
 
 section#projects-v {
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 00px 0px;
 }
 
 span.item-filter{
@@ -2139,12 +2139,12 @@ span.item-filter{
     left: -3rem;
     right: -3rem;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .75);
-    z-index: 9999;
+    z-index: 2;
 }    
 
 
 .box-filter{
-      height: 90px;
+      height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -2155,22 +2155,27 @@ span.item-filter{
 
 section#contact-us-projects {
   margin: 20px 0px 40px 0px;
+  position: relative;
 }
 
 section#contact-us-services {
   margin: 0px 0px 0px 0px;
+  position: relative;
 }
 
 section#contact-us-about {
   margin: 0px 0px 0px 0px;
+  position: relative;
 }
 
 section#contact-us-tank {
   margin: 20px 0px 40px 0px;
+  position: relative;
 }
 
 section#contact-us-details{
   margin: 0px 0px 0px 0px;
+  position: relative;
 }
 
 .box-about-image {
@@ -2301,4 +2306,15 @@ section#contact-us-details{
   font-weight: 600 !important;
   text-align: center !important;
   white-space: pre-line !important;
+}
+
+
+#grid-box-projects{
+    /* margin: 20px 0px; */
+    height: auto;
+    width: 100%;
+/*     background: rebeccapurple; */
+    /* padding: 20px 0px; */
+    overflow: hidden;
+    padding: 32px 0px 32px 0px;
 }

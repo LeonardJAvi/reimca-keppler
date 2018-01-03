@@ -30,26 +30,26 @@ menu:
     icon: content_paste
     current: ['admin/works']
     model: Work
+  keppler_messages:
+    name: keppler messages
+    current: ['keppler_contact_us/messages', 'keppler_contact_us/message_settings']
+    icon: email
+    model: KepplerContactUs::Message
+    submenu:
+      - messages:
+          name: Messages
+          url_path: /admin/messages
+          current: ['keppler_contact_us/messages']
+      - message_settings:
+          name: Message Settings
+          url_path: /admin/message_settings
+          current: ['keppler_contact_us/message_settings']
   user:
     name: users
     url_path: /admin/users
     icon: account_circle
     current: ["admin/users"]
     model: User
-  keppler_messages:
-      name: keppler messages
-      current: ['keppler_contact_us/messages', 'keppler_contact_us/message_settings']
-      icon: email
-      model: KepplerContactUs::Message
-      submenu:
-        - messages:
-            name: Messages
-            url_path: /admin/messages
-            current: ['keppler_contact_us/messages']
-        - message_settings:
-            name: Message Settings
-            url_path: /admin/message_settings
-            current: ['keppler_contact_us/message_settings']
   customize:
     name: keppler design
     icon: color_lens

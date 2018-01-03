@@ -9,12 +9,13 @@
 					= simple_form_for [:admin, @work] do |f|
 						.row
 							= f.input :name
-							= f.input :description, input_html: {class: "materialize-textarea"}
-							= f.input :stack_state_id, collection: StackState.all
-							#state
+							= f.input :description, input_html: {class: "materialize-textarea", style: "margin: 0 !important;"}
+							-# = f.input :stack_state_id, collection: StackState.all
+							= f.input :stack_state_id, collection: @list_state_ven, label: false,include_blank: 'Select State', input_html: { class: "browser-default",  style:"margin-bottom: 5px;" }
+							#state{:style => "margin-bottom: 5px;", class: "col input-field optional s12 select"}
 							= f.input :contractor
 							= f.input :time
-							= f.file_field :image
+							= f.file_field :image, label: false,include_blank: 'Select State'
 
 							.form-actions.right
 								= f.button :submit, t("keppler.actions.save"), name: '_save'
@@ -32,3 +33,7 @@
 			});
 		});
 	});
+
+
+
+

@@ -51,135 +51,124 @@
 			%span.point .
 		%p#description-projects Mantenemos como norte el cumplimiento de las actividades
 	.container-fluid.fix
-		.row.fix-m
-			.col-lg-12.fix
-				.box-filter
-					#button-project.button-o-r
-						%a#project-button.o-button.-grey.filter-button{"data-filter" => "all"}
-							%span.o-button_label Todos
-					#button-project.button-o-r
-						%a#project-button.o-button.-grey.-left.filter-button{"data-filter" => "metalmecanica"}
-							%span.o-button_label Metalmecánica
-					#button-project.button-o-r
-						%a#project-button.o-button.-grey.filter-button{"data-filter" => "civil"}
-							%span.o-button_label civil
-					#button-project.button-o-r
-						%a#project-button.o-button.-grey.-left.filter-button{"data-filter" => "electricidad"}
-							%span.o-button_label electricidad
-			.col-lg-3.fix.filter.electricidad
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.electricidad
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.electricidad
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.electricidad
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.metalmecanica
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.metalmecanica
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.metalmecanica
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.metalmecanica
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.civil
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.civil
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.civil
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
-			.col-lg-3.fix.filter.civil
-				.box-project
-					%a.open-box{:href => "project-details.html"}
-						= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
-						.mask-project
-							.logo-project
-								= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
-							%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-12.fix
+			.box-filter
+				#button-project.button-o-r
+					%a#project-button.o-button.-grey.filter-button{"data-filter" => "all"}
+						%span.o-button_label Todos
+				#button-project.button-o-r
+					%a#project-button.o-button.-grey.-left.filter-button{"data-filter" => "metalmecanica"}
+						%span.o-button_label Metalmecánica
+				#button-project.button-o-r
+					%a#project-button.o-button.-grey.filter-button{"data-filter" => "civil"}
+						%span.o-button_label civil
+				#button-project.button-o-r
+					%a#project-button.o-button.-grey.-left.filter-button{"data-filter" => "electricidad"}
+						%span.o-button_label electricidad
+
+%section#grid-box-projects
+	.container-fluid.fix
+		.col-lg-3.fix.filter.electricidad
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/DomoG_HMT_01.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+
+		.col-lg-3.fix.filter.electricidad
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/cover-about.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.electricidad
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/cover-civil.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.electricidad
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/01.jpeg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.metalmecanica
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.metalmecanica
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/E-01.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.metalmecanica
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/E-03.JPG', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.metalmecanica
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/DomoG_HMT_04V2.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.civil
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.civil
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/02.jpeg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.civil
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/E-01.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+		.col-lg-3.fix.filter.civil
+			.box-project
+				= link_to app_projectdetails_path, { class: "open-box" } do 
+					= image_tag 'img/cover-metalmecanica.jpg', class: 'img-responsive'
+					.mask-project
+						.logo-project
+							= image_tag 'img/PDVSA.png', class: 'img-responsive', id:'project-logo'
+						%span.title-project Lorem ipsum dolor sit amet
+
 
 %section#contact-us-services
-	.container-fluid.fix
-		#wallpaper-contact
-		.col-xs-12.col-sm-12.col-md-12.col-lg-4.fix
-			#box-contact-w
-				#info-contact
-					%span#title-contact contáctanos
-					%span.title-phone-email Teléfonos
-					%span.item-phone-email +58 269 2206758
-					%span.item-phone-email +58 414 5299511
-					%span.title-phone-email Correo electrónico
-					%span.item-phone-email medinal@reimca.net
-					%span.item-phone-email estebanmedina@reimca.net
-		.col-xs-12.col-sm-12.col-md-12.col-lg-8.fix
-			#box-form-contact
-				#mask-contac
-					= render "keppler_contact_us/messages/form"
+	= render "app/front/contacto_reimca"
 
 %footer#footer
 	= render "app/front/footer_reimca"

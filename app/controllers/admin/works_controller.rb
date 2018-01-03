@@ -3,6 +3,11 @@ module Admin
   class WorksController < AdminController
     before_action :set_work, only: [:show, :edit, :update, :destroy]
     before_action :show_history, only: [:index]
+    before_action :list_state
+
+    def list_state
+       @list_state_ven = StackState.all
+    end
 
     # GET /works
     def index

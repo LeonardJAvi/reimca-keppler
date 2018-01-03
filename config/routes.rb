@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   get '/services/electricity', to: 'app/front#electricidad', as: :app_electricity
   get '/services/metalmechanics', to: 'app/front#metalmecanica', as: :app_metalmechanics
   get '/services/tank', to: 'app/front#tank', as: :app_tank
-  get '/project/details', to: 'app/front#projectdetails', as: :app_projectdetails
+  get '/projects/details', to: 'app/front#projectdetails', as: :app_projectdetails
   get '/projects/all', to: 'app/front#projects', as: :app_projects
 
   post 'admin/works/state', as: 'admin_work_state' 
