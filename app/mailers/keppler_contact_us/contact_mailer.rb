@@ -7,7 +7,7 @@ module KepplerContactUs
       mail(
         from: mailer_from,
         to: @client.email,
-        subject: "REIMCA"
+        subject: "Solicitud de Contacto | REIMCA"
       )
     end
   end
